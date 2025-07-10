@@ -93,10 +93,27 @@
     font-size: .625rem;
 }
 
-.pokemon .name {
-    text-transform: capitalize;
-    color: #fff;
-    margin-bottom: .25rem;
+.pokemon .nameNav {
+  text-decoration: none;  
+  text-transform: capitalize;
+  color: #fff;
+  background: none;
+  border: none;
+  border: solid 1px transparent;
+  cursor: pointer;
+  margin-bottom: 0.25rem;
+
+  display: inline-block;
+  max-width: max-content;
+  border-radius: 10px;
+  padding: 5px;
+  width: auto;
+}
+
+
+.pokemon .nameNav:hover {
+    transform: scale(1.02);
+    border: solid 1px rgba(43, 41, 41, 0.664);
 }
 
 .pokemon .detail {

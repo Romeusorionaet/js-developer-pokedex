@@ -1,0 +1,163 @@
+.controls-head {
+    position: absolute;
+    padding: 1rem 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.back-to-home-link {
+    text-decoration: none;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.582);
+}
+
+.controls-head button {
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.582);
+}
+
+/* pokemon detail card */
+
+.pokemon-details {
+    height: 40vh;
+    padding-top: 4rem;
+    border-radius: 0 0 50px 50px;;
+}
+
+.wrap-text-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.details-name {
+    color: white;
+}
+
+.details-name::first-letter {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: bolder;
+}
+
+.details-types {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.details-types li {
+    display: inline-block;
+    padding: 4px 8px; 
+    margin: 4px; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+.details-number {
+    color: rgba(255, 255, 255, 0.836);
+}
+
+.details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-image {
+    width: clamp(10rem, 11vw, 22rem);
+    height: clamp(12rem, 11vw, 22rem);
+    margin-top: 2.5rem;
+}
+
+/* pokemon attributes */
+
+.pokemon-attributes {
+    background-color: rgb(221, 221, 221);
+    height: 62.1vh;
+}
+
+.controls-attributes {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+}
+
+.controls-attributes button {
+    border: none;
+    color: rgba(131, 131, 131, 0.705);
+}
+
+.tab-btn.active-tab {
+    color: white;
+    border-radius: 4px;
+}
+
+.attributes-list {
+    padding-right: 1rem;
+}
+
+.attributes-list ul {
+    list-style: none;
+    color: rgb(43, 43, 43);
+    padding-top: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.attributes-list ul li span {
+    color: rgba(71, 71, 71, 0.74);
+    margin-right: 6px;
+}
+
+.attributes-list h2 {
+    font-size: 1.1rem;
+    margin: 2rem 1.5rem 0;
+}
+
+ /* == */
+
+.stat-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  width: 80px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.bar-container {
+  position: relative;
+  flex: 1;
+  height: 14px;
+  background-color: #eee;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.bar-value {
+  position: absolute;
+  right: 5px;
+  top: -20px;
+  font-size: 12px;
+  color: #333;
+}
